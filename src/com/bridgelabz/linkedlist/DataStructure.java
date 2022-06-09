@@ -22,5 +22,13 @@ public class DataStructure {
         linkedList3.add(56);
         linkedList3.insertBetween(30);
         linkedList3.print();
+
+        // delete first element
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.add(70);
+        linkedList4.add(30);
+        linkedList4.add(56);
+        linkedList4.popFirst();
+        linkedList4.print();
     }
 }

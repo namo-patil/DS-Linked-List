@@ -32,6 +32,10 @@ public class LinkedList<T> {
         head.next = newNode;
         newNode.next = tail;
     }
+    public void popFirst(){
+
+        head = head.next;
+    }
 
     public void print() {
         Node<T> currNode = head;
