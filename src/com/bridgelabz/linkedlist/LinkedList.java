@@ -12,6 +12,18 @@ public class LinkedList<T> {
             head = newNode;
         }
     }
+    public void append(T data){
+        Node<T> newNode = new Node<>(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node<T> currNode = head;
+            while (currNode.next != null) {
+                currNode = currNode.next;
+            }
+            currNode.next = newNode;
+        }
+    }
 
     public void print() {
         Node<T> currNode = head;
