@@ -6,7 +6,6 @@ public class DataStructure {
         linkedList.add(70);
         linkedList.add(30);
         linkedList.add(56);
-
         linkedList.print();
     }
 }
