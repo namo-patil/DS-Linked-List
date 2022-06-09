@@ -28,7 +28,7 @@ public class LinkedList<T> {
     public void print() {
         Node<T> currNode = head;
         while (currNode != null) {
-            System.out.print(currNode.data + "--->");
+            System.out.print(currNode.data + "-->");
             currNode = currNode.next;
         }
         System.out.println("null");
