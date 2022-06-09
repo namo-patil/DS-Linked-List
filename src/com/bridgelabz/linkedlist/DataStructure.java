@@ -30,5 +30,13 @@ public class DataStructure {
         linkedList4.add(56);
         linkedList4.popFirst();
         linkedList4.print();
+
+        // delete last element
+        LinkedList<Integer> linkedList5 = new LinkedList<>();
+        linkedList5.add(70);
+        linkedList5.add(30);
+        linkedList5.add(56);
+        linkedList5.popLast();
+        linkedList5.print();
     }
 }

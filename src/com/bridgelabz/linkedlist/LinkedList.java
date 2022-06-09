@@ -14,7 +14,8 @@ public class LinkedList<T> {
             head = newNode;
         }
     }
-    public void append(T data){
+
+    public void append(T data) {
         Node<T> newNode = new Node<>(data);
         if (head == null) {
             head = newNode;
@@ -27,14 +28,25 @@ public class LinkedList<T> {
             currNode.next = newNode;
         }
     }
-    public void insertBetween(T insertData){
+
+    public void insertBetween(T insertData) {
         Node<T> newNode = new Node<>(insertData);
         head.next = newNode;
         newNode.next = tail;
     }
-    public void popFirst(){
 
+    public void popFirst() {
         head = head.next;
+    }
+
+    public void popLast() {
+        Node<T> secondLast = head;
+        Node<T> lastNode = head.next;
+        while (lastNode.next != null) {
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+        secondLast.next = null;
     }
 
     public void print() {
